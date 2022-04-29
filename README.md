@@ -1,4 +1,4 @@
-# CS445-Lab
+# CS445-Lab - Ngoc Tam Nguyen
 
 1. [Lab 1 - Git](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab1/lab1.pdf)
 
