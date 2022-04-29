@@ -1,8 +1,8 @@
 # CS445-Lab
 
-[Lab 1](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab1/lab1.pdf)
+1. [Lab 1 - Git](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab1/lab1.pdf)
 
-Lab 3
+2. Lab 2 - TypeScript
 
    [Exercise 1](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise01.ts)
 
