@@ -16,8 +16,8 @@ rectangle.calcSize = function() {
 console.log(rectangle.calcSize()); // 10 */
 
 let baseObject = { 
-	width: 0, 
-	length: 0 
+	width: Number = 0, 
+	length: Number = 0 
 }; 
 let rectangle = Object.create(baseObject); 
 
