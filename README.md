@@ -4,12 +4,17 @@
 
 2. Lab 2 - TypeScript
 
-   [Exercise 1](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise01.ts)
+      [Exercise 1](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise01.ts)
 
-   [Exercise 2](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise02.ts)
+      [Exercise 2](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise02.ts)
 
-   [Exercise 3](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise03.ts)
+      [Exercise 3](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise03.ts)
 
-   [Exercise 4](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise03.ts)
+      [Exercise 4](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab2/src/ts-exercise03.ts)
+3. Lab 3 - Design Pattern 1
 
+      [Exercise 1](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab3-DesignPattern01/Exercise01.js)
 
+      [Exercise 2](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab3-DesignPattern01/Exercise02.js)
+      
+4. lab 3 - Design Pattern 2
