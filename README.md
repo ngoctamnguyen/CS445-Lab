@@ -18,3 +18,11 @@
       [Exercise 2](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab3-DesignPattern01/Exercise02.js)
       
 4. lab 3 - Design Pattern 2
+
+      [Exercise 1](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab4-DesignPattern02/Exercise01.js)
+
+      [Exercise 2](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab4-DesignPattern02/Exercise02.js)
+
+      [Exercise 3](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab4-DesignPattern02/Exercise03.js)
+
+      [Exercise 4](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab4-DesignPattern02/Exercise04.js)
