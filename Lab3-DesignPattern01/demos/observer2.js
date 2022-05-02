@@ -1,21 +1,21 @@
 class Subject {
-    observers = [];
+    //observers = [];
 
+    constructor() {
+        this.observers = [];
+    }
     subscribe(observer) {
         this.observers.push(observer);
     }
-
     unsubscribe(observer) {
         this.observers = this.observers.filter(ob => ob !== observer);
     }
-
     next(message) {
         this.observers.forEach(ob => {
             ob.next(message);
         });
     }
 }
-
 const subject = new Subject();
 let observer1 = {
     next: msg => console.log('Observer A ' + msg)

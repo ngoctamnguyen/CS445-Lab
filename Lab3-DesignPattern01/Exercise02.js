@@ -42,6 +42,7 @@ console.log(subject);
 function foo(msg) {
     console.log('foo: ' + msg);
 }
+
 subject.on('eat', foo);
 console.log(subject);
 subject.on('study', foo);

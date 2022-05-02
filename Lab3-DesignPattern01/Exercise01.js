@@ -1,3 +1,18 @@
+/*
+Use the Module pattern to create a shopping cart that has one private member: basket which is an Array, and the following public methods:
+
+upsertItem(item) add an item to basket if doesn't exist, or update if exist.
+getItemsCount() returns the total number of items in the basket.
+getTotalPrice() calculates the total price of items. Each item price is the product's price multiply item's count.
+removeItemById(id) removes an item from the basket. Every product item has the following structure:
+*/
+
+
+
+const item1 = { id: 0, product: { id: 1, name: 'Coffee', description: 'Coffee Grounds from Ethiopia', price: 9 }, count: 1 }
+const item2 = { id: 1, product: { id: 2, name: 'Tea', description: 'Oonlong Tea from China', price: 10 }, count: 5 }
+const item3 = { id: 2, product: { id: 3, name: 'Bottled Water', description: 'Bottled Water from US', price: 2 }, count: 30 }
+
 const shoppingCart = (function() {
     let bastket = [];
 
@@ -24,10 +39,6 @@ const shoppingCart = (function() {
 })();
 
 
-
-const item1 = { id: 0, product: { id: 1, name: 'Coffee', description: 'Coffee Grounds from Ethiopia', price: 9 }, count: 1 }
-const item2 = { id: 1, product: { id: 2, name: 'Tea', description: 'Oonlong Tea from China', price: 10 }, count: 5 }
-const item3 = { id: 2, product: { id: 3, name: 'Bottled Water', description: 'Bottled Water from US', price: 2 }, count: 30 }
 
 shoppingCart.upsertItem(item1);
 shoppingCart.upsertItem(item2);

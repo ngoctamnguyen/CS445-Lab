@@ -1,35 +1,26 @@
 class Publisher {
-
     constructor() {
         this.subscriberList = [];
     }
-
     subscribe(subscriber) {
         this.subscriberList.push(subscriber);
     }
-
     unsubscribe(subscriber) {
         this.subscriberList = this.subscriberList.filter(sb => sb !== subscriber);
     }
-
     notify(email) {
         this.subscriberList.forEach(subscriber => {
             subscriber.next(email);
         });
     }
-
 }
-
 class Subscriber {
-
     constructor(username) {
         this.username = username;
     }
-
     next(message) {
         console.log(`${this.username} got a message: ${message}`);
     }
-
 }
 
 const miu = new Publisher();
