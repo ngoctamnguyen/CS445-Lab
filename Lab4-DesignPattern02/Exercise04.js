@@ -7,8 +7,8 @@ const fibonacci = (function() {
 
     function fibo(n) {
         let value;
-
-        if (n in memo) {
+        //n in memo
+        if (memo[n]) {
             value = memo[n];
         } else {
             if (n === 0 || n === 1)
@@ -18,11 +18,10 @@ const fibonacci = (function() {
 
             memo[n] = value;
         }
-
         return value;
     }
 
     return fibo;
 })();
 
-console.log(fibonacci(40));
+console.log(fibonacci(5));

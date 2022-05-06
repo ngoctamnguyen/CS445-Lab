@@ -9,17 +9,16 @@ class GeoCoder {
         }
     };
 }
-
 class GeoProxy {
-
     constructor() {
         this.geocoder = new GeoCoder();
         this.geocache = {};
     }
-
     getLatLng(address) {
-        if (!this.geocache[address]) {
+        if (!this.geocache[address]) { //if address was not in cache -> store it
             this.geocache[address] = this.geocoder.getLatLng(address);
+        } else {
+            console.log("address is cached");
         }
         console.log(address + ": " + this.geocache[address]);
         return this.geocache[address];
@@ -27,7 +26,6 @@ class GeoProxy {
 }
 
 let geo = new GeoProxy();
-
 // geolocation requests
 console.log(geo.getLatLng("Fairfield"));
 console.log(geo.getLatLng("Fairfield"))
