@@ -1,0 +1,62 @@
+<!-- Create a simple calculator.html page which has 3 inputs and 1 submit on it.
+The first 2 inputs are only allowed to put numbers.
+If you use type any number in the first 2 inputs, then click submit button. 
+JavaScript will sum the two numbers, display the typed number in the first 2 inputs,
+ the result in the last input. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+            .inputGroup {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+            .inputGroup > input {
+                width: 70px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="inputGroup">
+        <input name="firstValue" type="text" id="firstValue"  placeholder="number"/>
+        <input name="operator" type="text" id="operator" placeholder="operator"/>
+        <input name="secondValue" type="text" id="secondValue" placeholder="number"/>
+        <input name="equal" type="text" id="equal" value="="/>
+        <input name="resultValue" type="text" id="resultValue" placeholder="result"/>
+        <input type="button" id="btn" value="submit"/>
+    </div>
+    <script>
+        document.getElementById("btn").onclick = function() {
+            let num1 = parseInt(document.getElementById("firstValue").value);
+            let num2 = parseInt(document.getElementById("secondValue").value);
+            let op = document.getElementById("operator").value;
+            console.log(num1);
+            console.log(op);
+            switch (op) {
+                case "+":
+                    document.getElementById("resultValue").value = num1 + num2;
+                    break;
+                case "-":
+                    document.getElementById("resultValue").value = num1 - num2;
+                    break;            
+                case "*":
+                    document.getElementById("resultValue").value = num1 * num2;
+                    break;               
+                case "/":
+                    if (num2 === 0) {
+                        alert("Division by zero");
+                        break;
+                    }
+                    document.getElementById("resultValue").value = num1 / num2;
+            }
+        }
+    </script>
+</body>
+</html>
