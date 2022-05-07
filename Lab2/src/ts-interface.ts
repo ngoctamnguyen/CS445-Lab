@@ -50,7 +50,7 @@ interface ICourse {
     getGrade(): number;
 }
 
-class Course implements ICourse {
+class Courses implements ICourse {
     code: number;
     name: string;
     grade: number = 0; //strict type checking
@@ -67,7 +67,7 @@ class Course implements ICourse {
     }
 }
 
-let course = new Course(445, "Modern Asynchronous Programming");
+let course = new Courses(445, "Modern Asynchronous Programming");
 
 
 

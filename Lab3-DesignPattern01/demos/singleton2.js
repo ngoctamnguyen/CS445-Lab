@@ -1,7 +1,6 @@
 class Singleton {
 
     constructor() {
-        console.log(Singleton.instance);
         if (!Singleton.instance) {
             Singleton.instance = this;
         }
@@ -11,8 +10,8 @@ class Singleton {
 
 }
 
-const instance1 = new Singleton();
-const instance2 = new Singleton();
-const instance3 = new Singleton();
-const instance4 = new Singleton();
+const instance1 = new Singleton();  //undefined
+const instance2 = new Singleton();  //Singleton {}
+const instance3 = new Singleton();   //Singleton {}
+const instance4 = new Singleton();   //Singleton {}
 console.log(instance1 === instance2);

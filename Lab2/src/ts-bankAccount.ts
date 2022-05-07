@@ -1,4 +1,4 @@
-let bankAccount: {
+let bankAccounts: {
     money: number,
     deposit(value: number): void
 } = {
@@ -8,13 +8,13 @@ let bankAccount: {
     }
 };
 
-let myself: {
+let mySelf: {
     name: string,
-    bankAccount: typeof bankAccount,
+    bankAccount: typeof bankAccounts,
     hobbies: Array<string>
 } = {
     name: "John",
-    bankAccount: bankAccount,
+    bankAccount: bankAccounts,
     hobbies: ["Violin", "Cooking"]
 };
 

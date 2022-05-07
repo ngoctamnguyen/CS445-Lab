@@ -1,6 +1,5 @@
 class Subject {
     //observers = [];
-
     constructor() {
         this.observers = [];
     }
