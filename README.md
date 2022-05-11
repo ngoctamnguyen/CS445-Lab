@@ -32,8 +32,14 @@
 
       [Exercise 2 - calculator](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab5-JSDOM/caculator.html)
 
-5. lab 6 - Asynchronous programming and promise
+6. lab 6 - Asynchronous programming and promise
 
       [Exercise 1 - isPrime](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab6-eventLoop-Promise/Exercise01.js)
 
       [Exercise 2 - remove duplicate](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab6-eventLoop-Promise/Exercise02.js)
+
+7. lab 7 - Async and Await
+
+      [Exercise 1 - isPrime Async](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab7-Async-Await/Exercise01.js)
+
+      [Exercise 2 - remove Duplicate async](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab7-Async-Await/Exercise02.js)
