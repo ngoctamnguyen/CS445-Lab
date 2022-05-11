@@ -31,3 +31,9 @@
       [Exercise 1 - swap](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab5-JSDOM/swap.html)
 
       [Exercise 2 - calculator](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab5-JSDOM/caculator.html)
+
+5. lab 6 - Asynchronous programming and promise
+
+      [Exercise 1 - isPrime](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab6-eventLoop-Promise/Exercise01.js)
+
+      [Exercise 2 - remove duplicate](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab6-eventLoop-Promise/Exercise02.js)
