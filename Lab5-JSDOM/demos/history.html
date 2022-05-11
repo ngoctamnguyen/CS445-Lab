@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="btns">
+        <button id="btn1" href="#sakai">Sakai</button>
+        <button id="btn2" href="#compro">CS MIU</button>
+        <button id="btn3" href="#miu">MIU</button>
+    </div>
+    <div id="content">something</div>
+    <button id="back">Back</button>
+    <button id="forward">Forward</button>
+    <script>
+        document.querySelector(".btns").onclick = function(event) {
+            let btn = document.getElementById(event.target.id);
+            let url = btn.getAttribute('href');
+            document.getElementById("content").innerHTML = url;
+            history.pushState({},'',url);
+        }
+        document.getElementById('back').onclick = function() {
+            history.back();
+        }
+        document.getElementById('forward').onclick = function() {
+            history.forward();
+        }
+        window.onhashchange = function() {
+            console.log(window.location.hash);
+            let btn = document.getElementById(event.target.id);
+            document.getElementById('content').innerHTML = window.location.hash;
+        }
+    </script>
+</body>
+</html>

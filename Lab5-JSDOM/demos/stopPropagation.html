@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body id="bdy">
+        <h1>Title...</h1>
+        <div id="container">
+            <p id="paragraph">click Me</p>
+        </div>
+        <script>
+            //default is false, bubbling phase
+            //if true -> capture phase ( top down)
+            document.getElementById("bdy").addEventListener('click', function() {
+                    alert("Body");
+                });
+                document.getElementById("container").addEventListener('click', function() {
+                    alert("div");
+                });
+                document.getElementById("paragraph").addEventListener('click', function() {
+                    alert("paragraph");
+                    // event.stopPropagation();
+                    event.stopImmediatePropagation();
+                });
+        </script>
+    </body>
+</body>
+</html>

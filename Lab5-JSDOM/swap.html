@@ -5,6 +5,7 @@ When you click the Swap button, the location of two pictures are swaped.
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,15 +19,27 @@ When you click the Swap button, the location of two pictures are swaped.
             align-items: center;
         }
     </style>
-</head>
-<body>
-    <img src="./images/Happy.jpg" alt="iamge01" id="img01" width="300px" height="300px" style="border-radius: 50%;"/>
-    <button id="btn" style="height:30px; width: 100px;">Swap</button>
-    <img src="./images/sad.jpg" alt="iamge02" id="img02" width="300px" height="300px" style="border-radius: 50%;"/>
-    <br /><br />
-    
-
     <script>
+        window.onload = function () {
+            document.getElementById("btn").onclick = function () {
+                let img1 = document.getElementById("img01").src;
+                let img2 = document.getElementById("img02").src;
+                swap = document.getElementById("img01").src;
+                document.getElementById("img01").src = img2;
+                document.getElementById("img02").src = swap;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img src="./images/Happy.jpg" alt="iamge01" id="img01" width="300px" height="300px" style="border-radius: 50%;" />
+    <button id="btn" style="height:30px; width: 100px;">Swap</button>
+    <img src="./images/sad.jpg" alt="iamge02" id="img02" width="300px" height="300px" style="border-radius: 50%;" />
+    <br /><br />
+
+
+    <!-- <script>
         document.getElementById("btn").onclick = function() {
             let img1 = document.getElementById("img01").src;
             let img2 = document.getElementById("img02").src;
@@ -34,6 +47,7 @@ When you click the Swap button, the location of two pictures are swaped.
             document.getElementById("img01").src = img2;
             document.getElementById("img02").src = swap;
         }
-    </script>
+    </script> -->
 </body>
+
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Species</h1>
+    <p>Click on a species to see what type it is:</p>
+    <ul>
+        <li id="owl" data-animal-type="bird" data-name="John" my-msg="hi bird">Owl</li>
+        <li id="salmon" data-animal-type="fish" data-name="Edward" my-msg="hi fish">Salmon</li>
+        <li id="tarantula" data-animal-type="spider" data-name="Lucy" my-msg="hi spider">Taratula</li>
+    </ul>
+    <script>
+        let lis = document.getElementsByTagName("li"); //a collection HTMLCollection is an array like collection, It doesn't have push, pop, shift, forEach, map, reduce
+        for (let i=0; i < lis.length; i++) {
+            lis[i].onclick = function() {
+                //let animalType = this.getAttribute("data-animal-type");
+                let animalType = this.dataset.animalType;
+                console.log("the " + this.innerHTML + " is a " + animalType + ".");
+                console.log(this.dataset.name);
+
+                console.log(this.getAttribute("my-msg"));
+            }
+        }
+    </script>
+</body>
+</html>

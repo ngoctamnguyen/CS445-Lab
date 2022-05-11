@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <ul>
+                <li class="active" id="tab1">React</li>
+                <li id="tab2">Vue</li>
+                <li if="tab3">Angular</li>                
+            </ul>
+            <div class="content">
+                A Javascript library for building user interfaces
+            </div>
+        </div>
+    </div>
+    <script>
+        const tabs = document.querySelector(".tabs");
+        const content = document.querySelector(".tab > .content");
+        //store the relationship between hasd and tab id
+        const hashed = new Map ([
+            ["#react", "tab1"],
+            ["#vue", "tab2"],
+            ["#angular", "tab3"],
+        ]);
+        //store the relationship between tab id and content
+        const data = new Map ([
+            [
+                "tab1", {
+                    url: "#react",
+                    content: "React is the progressive favascript framework"
+                },
+            ],
+            [
+                "tab2", {
+                    url: "#vue",
+                    content: "Vue is the progressive favascript framework"
+                },
+            ],
+            [
+                "tab3", {
+                    url: "#angular",
+                    content: "Angular is the progressive favascript framework"
+                },
+            ],
+        ]);
+        tabs.addEventListener("click", function(event) {
+            if (!event.target.id) return;
+            update(event.target.id);
+        });
+        const update = (tabId) => {
+            //remove the active claas of the previously selected tab
+            const currentTab = tabs.querySelector(".active");
+            if (currentTab.id !== tabId) {
+                currentTab.classList.remove("active");
+            }
+            //add active class to the selected class
+            const selectedTab = document.getElementById("tabId");
+            selectedTab.classList.add("active");
+            const entry = data.get(tabId);
+            if (etry) {
+                //update url
+                history.pushState(null, "", entry.url);
+                //change the content
+                content.innerHTML = entry.content;
+            }
+        };
+        (() => {
+            //get tab id from the hash
+            const tabId = hashed.get(window.location.hash);
+            //update the tab
+            if (tabId) update(tabId);
+        })();
+        window.onhashchange = () => {
+            //get tab id from the hash
+            const tabId = hashed.get(window.location.hash);
+            //update the tab
+            if (tabId) update(tabId);
+        };
+    </script>
+</body>
+</html>
