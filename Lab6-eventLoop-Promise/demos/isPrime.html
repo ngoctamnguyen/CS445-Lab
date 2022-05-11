@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Promise</h2>
+
+    <input id="myInput">
+    <button id="btn">Is Prime</button>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("btn").onclick = function () {
+            function myDisplayer(some) {
+                document.getElementById("demo").innerHTML = some;
+            }
+
+            let myPromise = new Promise(function (myResolve, myReject) {
+                let num = parseInt(document.getElementById("myInput").value);
+
+                // some code (try to change x to 5)
+                for (let i = 2, s = Math.sqrt(num); i <= s; i++)
+                    if (num % i === 0) myReject("{ prime: false }");
+                myResolve({ prime: num > 1 });
+                // if (x == 0) {
+                //     myResolve("OK");
+                // } else {
+                //     myReject("Error");
+                // }
+            });
+
+            myPromise.then(
+                function (value) { myDisplayer(value); },
+                function (error) { myDisplayer(error); }
+            );
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="text"><br>
+    <script>
+        document.querySelector('input').addEventListener('keyup',
+            e => {
+                let n = 0
+                for (let i = 0; i < 9e7; i++) {
+                    n = n + e.which;
+                }
+                console.log(n);
+                console.log(e.key);
+            });
+    </script>
+</body>
+
+</html>
