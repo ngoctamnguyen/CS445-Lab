@@ -43,3 +43,7 @@
       [Exercise 1 - isPrime Async](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab7-Async-Await/Exercise01.js)
 
       [Exercise 2 - remove Duplicate async](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab7-Async-Await/Exercise02.js)
+
+8. lab 8 - Fetch
+
+      [Exercise - Employees List](https://github.com/ngoctamnguyen/CS445-Lab/blob/main/Lab8-fetch/index.html)
