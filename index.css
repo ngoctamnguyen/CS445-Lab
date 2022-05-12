@@ -1,0 +1,17 @@
+.detail {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    margin-top: 5%;
+}
+.rightCol {
+    margin: 0%;
+
+    padding: 0%;
+    text-align: right;
+    line-height: 20%;
+}
+img {
+    width: 80px;
+    height: 80px;
+}
