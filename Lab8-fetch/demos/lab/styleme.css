@@ -1,0 +1,10 @@
+body {
+    width: 300px;
+    background-color: green;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}

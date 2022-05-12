@@ -6,7 +6,7 @@
     <h2>JavaScript Promise</h2>
 
     <input id="myInput">
-    <button id="btn">Is Prime</button>
+    <button id="btn">Is Prime ?</button>
     <p id="demo"></p>
 
     <script>
@@ -18,24 +18,24 @@
             let myPromise = new Promise(function (myResolve, myReject) {
                 let num = parseInt(document.getElementById("myInput").value);
 
-                // some code (try to change x to 5)
                 for (let i = 2, s = Math.sqrt(num); i <= s; i++)
-                    if (num % i === 0) myReject("{ prime: false }");
-                myResolve({ prime: num > 1 });
-                // if (x == 0) {
-                //     myResolve("OK");
-                // } else {
-                //     myReject("Error");
-                // }
+                    if (num % i === 0) myReject(num);
+                myResolve(num);
             });
 
-            myPromise.then(
-                function (value) { myDisplayer(value); },
-                function (error) { myDisplayer(error); }
-            );
+            //1. first way
+            // myPromise.then(
+            //     function (value) { myDisplayer(value + " is prime number"); },
+            //     (value) => { myDisplayer(value + " is not prime number"); }
+            // );
+            
+            //2. Another handler
+            myPromise
+                .then(function (value) { myDisplayer(value + " is prime number"); })
+                .catch((value) => { myDisplayer(value + " is not prime number"); });
         }
 
-    </script>
+    </script>   
 
 </body>
 
