@@ -4,55 +4,21 @@
     <head>
         <meta charset="utf-8">
         <title>My music</title>
-        <style>
-            body {
-                background-color: brown;
-                background: url(MFLE-image.jpg);
-            }
-            .main {
-
-                padding: 10px;
-            }
-            .main-nav {
-                display: flex;
-                background-color:transparent;
-                color: white;
-                font-style:normal;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: bold;
-                align-items: center;
-                justify-content:space-between;
-                border-radius: 10%;
-                padding-left: 5%;
-                padding-right: 5%;
-               
-            }
-            .inside-nav {
-                display:inline-flex;
-                flex-direction: row;
-                flex: 0  1 200px;
-                justify-content: space-between;
-                padding-left: 10px;
-                padding-right: 5px;
-                font-weight: normal;
-                font-size: small;
-                
-            }
-            .btn {
-                background-color: lightskyblue;
-                border: none;
-                padding: 5px;
-                text-align: center;
-                border-radius: 20px;
-                width: 100px;
-                height:40px;
-            }
-        </style>
+        <link href="./main.css" rel="stylesheet" type="text/css" />
+        <script src="./main.js"></script>
     </head>
     <body>
         <div class="main">
-            <div class="main-nav">
-                <div style="order:0"><img src="logo.jpg" alt="Logo" height="80px" width="80px" style="border-radius: 50%"></div>
+            <div class="main-nav-loggedOut">
+                <div style="order:0"><img src="./images/logo.jpg" alt="Logo" height="80px" width="80px" style="border-radius: 50%"></div>
+                <div class="inside-nav">
+                    <p style="padding-right:10px;">Username</p><input id="username" style="width:100px; height:30px; margin-right:10px" />
+                    <p style="padding-right:10px;">Password</p><input id="password" style="width:100px; height:30px; margin-right:10px" />
+                    <button class="btn">Login</button>
+                </div>
+            </div>
+            <div class="main-nav-loggedIn">
+                <div style="order:0"><img src="./images/logo.jpg" alt="Logo" height="80px" width="80px" style="border-radius: 50%"></div>
                 <div class="inside-nav">
                     <p style="padding-right:10px;">Username</p><input id="username" style="width:100px; height:30px; margin-right:10px" />
                     <p style="padding-right:10px;">Password</p><input id="password" style="width:100px; height:30px; margin-right:10px" />

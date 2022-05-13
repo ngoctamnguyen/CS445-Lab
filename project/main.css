@@ -1,0 +1,64 @@
+body {
+    background-color: brown;
+    background: url(./images/MFLE-image.jpg);
+}
+
+.main {
+
+    padding: 10px;
+}
+
+.main-nav-loggedOut {
+    display: flex;
+    background-color: transparent;
+    color: white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.main-nav-loggedIn {
+    display: flex;
+    background-color: transparent;
+    color: white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.inside-nav {
+    display: inline-flex;
+    flex-direction: row;
+    flex: 0 1 200px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-weight: normal;
+    font-size: small;
+
+}
+
+.btn {
+    background-color: lightskyblue;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.main-nav-loggedIn {
+    display: none;
+}
